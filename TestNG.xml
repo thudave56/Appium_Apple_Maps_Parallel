@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Appium Suite" parallel="tests">
+  	<parameter name="user" value="PERFECTO_USERNAME"></parameter>
+  	<parameter name="password" value="PERFECTO_PASSWORD"></parameter>
+  	<parameter name="host" value="PERFECTO_CLOUDNAME.perfectomobile.com"></parameter>
+  <test name="Open  Maps on iPhone 6">
+    <classes>
+      <class name="Maps_Wilm_Split">
+      </class>
+      <parameter name="deviceModel" value="iPhone-6"></parameter>
+      <parameter name="devicePlatform" value="iOS"></parameter>
+      <parameter name="deviceManufacturer" value="Apple"></parameter>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Open  Maps on iPhone 7">
+    <classes>
+      <class name="Maps_Memphis"/>
+      <parameter name="deviceName" value="iPhone-7"></parameter>
+      <parameter name="devicePlatform" value="iOS"></parameter>
+      <parameter name="deviceManufacturer" value="Apple"></parameter>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
